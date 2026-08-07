@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="The official Goldcoin community token on Solana. Creator fees support Goldcoin development, infrastructure, ecosystem growth, and native GLC buybacks.">
+  <meta property="og:title" content="Goldcoin | Official Solana Community Token">
+  <meta property="og:description" content="Fueling Goldcoin development, infrastructure, growth, and native GLC buybacks.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/social-preview.png">
+  <title>Goldcoin | Official Solana Community Token</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-coin"><img src="assets/goldcoin-logo.png" alt=""></div>
+  </div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Goldcoin home">
+      <img src="assets/goldcoin-logo.png" alt="Goldcoin">
+      <span>Goldcoin</span>
+    </a>
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#about">About</a>
+      <a href="#token">Token</a>
+      <a href="#funding">Funding</a>
+      
+      <a href="#roadmap">Roadmap</a>
+      <a href="#safety">Safety</a>
+    </nav>
+    <a class="button button-small button-primary desktop-buy" href="PUMPFUN_LINK_HERE" target="_blank" rel="noopener">Buy on Pump.fun</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> Official Goldcoin community token on Solana</div>
+        <h1>Goldcoin,<br><span>reimagined for Solana.</span></h1>
+        <p class="hero-lead">A community-powered token created to expand Goldcoin's reach and help fund development, infrastructure, ecosystem growth, and native GLC buybacks.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="PUMPFUN_LINK_HERE" target="_blank" rel="noopener">Buy on Pump.fun <span>↗</span></a>
+          <a class="button button-secondary" href="#funding">See how fees are used</a>
+        </div>
+        <div class="contract-card glass">
+          <div>
+            <span class="label">Solana contract address</span>
+            <code id="contractText">CONTRACT_ADDRESS_HERE</code>
+          </div>
+          <button id="copyContract" class="copy-button" type="button">Copy</button>
+        </div>
+        <div class="trust-row">
+          <span>Open source</span><span>Community backed</span><span>Transparent funding</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="coin-stage" id="coinStage">
+          <div class="coin-shadow"></div>
+          <div class="coin-wrap" id="coinWrap">
+            <div class="coin-edge"></div>
+            <div class="coin-face"><img src="assets/meme-token-logo.png" alt="Goldcoin Solana token emblem"></div>
+            <div class="coin-shine"></div>
+          </div>
+          <div class="platform">
+            <div class="platform-ring"></div>
+            <div class="platform-core"></div>
+          </div>
+        </div>
+        <div class="floating-badge badge-one glass"><b>Solana</b><span>Fast settlement</span></div>
+        <div class="floating-badge badge-two glass"><b>Creator fees</b><span>Project funding</span></div>
+      </div>
+
+      <div class="scroll-hint"><span></span> Explore</div>
+    </section>
+
+    <section class="metrics section-narrow reveal" aria-label="Highlights">
+      <div class="metric"><b>Solana</b><span>Launch network</span></div>
+      <div class="metric"><b>GLC</b><span>Native buyback focus</span></div>
+      <div class="metric"><b>Open</b><span>Public GitHub contributors</span></div>
+      <div class="metric"><b>Long-term</b><span>Ecosystem support</span></div>
+    </section>
+
+    <section class="section split-section" id="about">
+      <div class="section-heading reveal">
+        <div class="eyebrow"><span></span> About the initiative</div>
+        <h2>One community.<br><span>Two ecosystems.</span></h2>
+      </div>
+      <div class="about-copy reveal reveal-delay">
+        <p class="large-copy">The Solana token is designed to introduce Goldcoin to a broader on-chain audience while supporting the continued development of the native Goldcoin ecosystem.</p>
+        <p>It does not replace the native Proof-of-Work GLC blockchain. It is a separate Solana-based community token intended to create new visibility, liquidity opportunities, and sustainable project funding.</p>
+        <a class="text-link" href="https://goldcoinproject.org" target="_blank" rel="noopener">Visit the main Goldcoin website <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="token">
+      <div class="section-heading centered reveal">
+        <div class="eyebrow"><span></span> Token overview</div>
+        <h2>Built for access.<br><span>Connected to purpose.</span></h2>
+        <p>Clear information, simple access, and a direct link between token activity and Goldcoin ecosystem support.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card glass reveal">
+          <div class="feature-icon">◎</div>
+          <h3>Solana-native</h3>
+          <p>Designed for fast, low-cost on-chain activity through the Solana ecosystem.</p>
+        </article>
+        <article class="feature-card glass reveal reveal-delay">
+          <div class="feature-icon">↗</div>
+          <h3>Community reach</h3>
+          <p>Created to introduce Goldcoin to new communities, platforms, and market participants.</p>
+        </article>
+        <article class="feature-card glass reveal reveal-delay-2">
+          <div class="feature-icon">◈</div>
+          <h3>Project support</h3>
+          <p>Creator fees are intended to support development, operations, promotion, and native GLC buybacks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section funding-section" id="funding">
+      <div class="funding-panel glass reveal">
+        <div class="funding-copy">
+          <div class="eyebrow"><span></span> Creator-fee transparency</div>
+          <h2>Activity that helps<br><span>fund the future.</span></h2>
+          <p>Creator fees generated by the token are intended to be directed toward Goldcoin project funding. Priorities may evolve based on project needs and will include areas such as:</p>
+          <div class="funding-note">No fixed allocation percentages are promised. Spending should follow real project needs and transparent team decisions.</div>
+        </div>
+        <div class="allocation-list">
+          <div class="allocation-item"><span class="allocation-number">01</span><div><b>Core development</b><p>Engineering, testing, releases, tooling, and technical improvements.</p></div></div>
+          <div class="allocation-item"><span class="allocation-number">02</span><div><b>Infrastructure</b><p>Servers, nodes, Electrum services, domains, certificates, and operational costs.</p></div></div>
+          <div class="allocation-item"><span class="allocation-number">03</span><div><b>Native GLC buybacks</b><p>Market purchases of native Goldcoin when appropriate to support the original ecosystem.</p></div></div>
+          <div class="allocation-item"><span class="allocation-number">04</span><div><b>Growth and visibility</b><p>Community campaigns, design, partnerships, exchange outreach, and ecosystem expansion.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="section roadmap-section" id="roadmap">
+      <div class="section-heading centered reveal">
+        <div class="eyebrow"><span></span> Direction</div>
+        <h2>A practical roadmap.<br><span>Not empty promises.</span></h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-line"></div>
+        <article class="timeline-item active"><span>01</span><div><small>Launch</small><h3>Token and community rollout</h3><p>Publish the official website, verified links, contract details, and launch communications.</p></div></article>
+        <article class="timeline-item"><span>02</span><div><small>Growth</small><h3>Visibility and liquidity</h3><p>Expand community reach, improve discovery, and pursue responsible ecosystem partnerships.</p></div></article>
+        <article class="timeline-item"><span>03</span><div><small>Funding</small><h3>Support Goldcoin operations</h3><p>Use creator-fee revenue for practical development, infrastructure, and promotional needs.</p></div></article>
+        <article class="timeline-item"><span>04</span><div><small>Connection</small><h3>Strengthen both ecosystems</h3><p>Explore sustainable ways for the Solana community token to benefit native GLC and Goldcoin users.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section safety-section" id="safety">
+      <div class="safety-card glass reveal">
+        <div>
+          <div class="eyebrow"><span></span> Stay safe</div>
+          <h2>Verify before<br><span>you interact.</span></h2>
+        </div>
+        <div class="safety-copy">
+          <p>Only use the contract address and purchase links published on this website and Goldcoin's official social channels. Never trust private messages asking for wallet access, seed phrases, or deposits.</p>
+          <ul>
+            <li>Confirm the contract address character by character.</li>
+            <li>Never share your seed phrase or private key.</li>
+            <li>Expect volatility and only participate with funds you can afford to risk.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="assets/goldcoin-logo.png" alt="Goldcoin">
+      <div><b>Goldcoin</b><span>Official Solana community token</span></div>
+    </div>
+    <div class="footer-links">
+      <a href="https://x.com/goldcoin" target="_blank" rel="noopener">X</a>
+      <a href="https://t.me/goldcointalk" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://github.com/goldcoin/goldcoin" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://bitcointalk.org/index.php?topic=317568.0" target="_blank" rel="noopener">Bitcointalk</a>
+    </div>
+    <p class="disclaimer">This website is informational and is not financial advice. Cryptocurrency involves substantial risk.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> Goldcoin</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
